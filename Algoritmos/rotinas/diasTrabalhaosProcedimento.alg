@@ -7,12 +7,10 @@ dias: inteiro
 
 procedimento trabalhoSal(d: inteiro)
 var
-trab, hora := real
+salario: real
 inicio
-trab := 8
-hora := 25
-
-
+salario := d * 200
+escreval ("Trabalhou",d," Dia(s) O seu salário da um total de R$",salario," Reais")
 fimprocedimento
 
 inicio

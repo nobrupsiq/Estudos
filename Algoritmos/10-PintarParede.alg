@@ -1,17 +1,15 @@
 algoritmo "semnome"
-
 var
-a, b, c, delta: real
+larg, alt, area, tinta: real
+
 inicio
-escreva ("Valor de A: ")
-leia(a)
-escreva ("Valor de B: ")
-leia(b)
-escreva ("Valor de C: ")
-leia(c)
+escreva ("Qual a altura da parede? ")
+leia(alt)
+escreva ("Qual a largura da parede? ")
+leia(larg)
+area <- (alt + larg)^2
+tinta <- tinta + area^(1/2)
+escreval (area,"M²")
+escreval ("Voce ira precisar de", tinta,"L, para pintar a parede")
 
-delta <- ((b^2)-(4*a*c))
-
-
-escreva ("O valor de DELTA é: ",delta)
 fimalgoritmo

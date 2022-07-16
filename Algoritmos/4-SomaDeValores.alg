@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "somaDeValores"
 var
 n1, n2, soma: inteiro
 

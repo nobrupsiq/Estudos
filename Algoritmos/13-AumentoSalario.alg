@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "aumentoSalario"
 var
 sal, cal, nsal: real
 inicio

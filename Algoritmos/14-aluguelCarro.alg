@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "AluguelDeCarro"
 
 var
 km, dia, calc: real

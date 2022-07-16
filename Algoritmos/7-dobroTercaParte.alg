@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "dobroTercaParte"
 
 var
 dobro, terca, n1: real

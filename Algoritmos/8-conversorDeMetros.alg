@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "conersorDeMedidas"
 
 var
 metros, km, hm, dam, dm, cm, mm: real

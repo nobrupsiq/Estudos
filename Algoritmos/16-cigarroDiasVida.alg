@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "tempoDeVidaCigarro"
 
 var
 cig, tempo,calc, ano, dia, min, calc2, calc3, calc4, calc5: real

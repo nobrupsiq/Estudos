@@ -24,7 +24,7 @@ var numero = 50;
 for (let numero = 0; numero < 10; numero++) {
   console.log(numero);
 }
-// alterando a var numero dentro do laço para let numero
+// alterando a var numero = 0 dentro do laço para let numero = 0
 
 const total = 10 * numero;
 console.log(total);

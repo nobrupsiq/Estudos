@@ -9,6 +9,7 @@
 
 // Como corrigir o erro abaixo?
 const dois = 2;
+// tirar a constante de dentro do escopo de bloco tornando ela global
 function somarDois(x) {
   return x + dois;
 }

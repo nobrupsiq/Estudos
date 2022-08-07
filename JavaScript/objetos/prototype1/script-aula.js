@@ -4,9 +4,13 @@
 function Pessoa(nome, idade) {
   this.nome = nome;
   this.idade = idade;
+  // this.abracar = function() {
+  //   return 'abraçou';
+  // }
 }
 
 const bruno = new Pessoa('Bruno', 27);
+const julia = new Pessoa('Julia', 24);
 
 // ************ FUNCAO.PROTOTYPE *******************
 // É possível adicionar novas propriedades e métodos ao objeto prototype.
@@ -16,6 +20,9 @@ Pessoa.prototype.andar = function() {
 }
 Pessoa.prototype.nadar = function() {
   return this.nome + ' Pessoa nadou';
+}
+Pessoa.prototype.abracar = function() {
+  return this.nome + ' Abraçou';
 }
 
 console.log(Pessoa.prototype);

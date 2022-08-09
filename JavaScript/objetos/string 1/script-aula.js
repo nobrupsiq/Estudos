@@ -111,7 +111,17 @@ gato.repeat(3); // Miau Miau Miau
 // Troca parte da string por outra. Podemos utilizar uma regular expression ou um valor direto. Se usarmos um valor direto ele irá trocar apenas o primeiro valor que encontrar.
 
 let listaItens = 'Camisas Bonés Calças Bermudas Vestidos Saias';
-listaItens = listaItens.replace(/[ ]+/g, ', ');
 
-let preco = 'R$ 1200,43';
-preco = preco.replace(',', '.'); // 'R$ 1200.43'
+listaItens = listaItens.replace(/[ ]+/g, ', ');
+// MAIS SOBRE REGULAR EXPRESSION NAS PROXIMAS AULAS
+
+
+// STR.SPLIT(PADRAO)
+// Divide a string de acordo com o padrão passado e retorna uma array.
+
+const listaItens2 = 'Camisas Bonés Calças Bermudas Vestidos Saias';
+const arrayItens = listaItens2.split(' ');
+
+const htmlText = '<div>O melhor item</div><div>A melhor lista</div>';
+const htmlArray = htmlText.split('div');
+const htmlNovo = htmlArray.join('section');

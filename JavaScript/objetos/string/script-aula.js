@@ -120,8 +120,29 @@ listaItens = listaItens.replace(/[ ]+/g, ', ');
 // Divide a string de acordo com o padrão passado e retorna uma array.
 
 const listaItens2 = 'Camisas Bonés Calças Bermudas Vestidos Saias';
-const arrayItens = listaItens2.split(' ');
+const arrayItens = listaItens2.split('l');
 
 const htmlText = '<div>O melhor item</div><div>A melhor lista</div>';
 const htmlArray = htmlText.split('div');
 const htmlNovo = htmlArray.join('section');
+// join() junta a array
+
+
+// STR.TOLOWERCASE() E STR.TOUPPERCASE()
+// Retorna a string em letras maiúsculas ou minúsculas. Bom para verificarmos input de usuários.
+
+const sexo1 = 'Feminino';
+const sexo2 = 'feminino';
+const sexo3 = 'FEMININO';
+
+console.log((sexo1.toUpperCase() === 'FEMININO')); // true
+
+
+// STR.TRIM(), STR.TRIMSTART(), STR.TRIMEND()
+// Remove espaço em branco do início ou final de uma string.
+
+const valor = '  R$ 23.00   '
+
+valor.trim(); // 'R$ 23.00'
+valor.trimStart(); // 'R$ 23.00   '
+valor.trimEnd(); // '   R$ 23.00'

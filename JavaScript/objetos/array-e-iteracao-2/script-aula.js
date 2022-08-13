@@ -88,3 +88,70 @@ const arraysCheias = frutas3.every((fruta) => {
 const numeros = [6, 43, 22, 88, 101, 29];
 const maiorQue3 = numeros.every(n => n > 3); // true
 
+
+// [].FIND() E [].FINDINDEX()
+// [].find(), retorna o valor atual da primeira iteração que retornar um valor truthy. Já o [].findIndex(), ao invés de retornar o valor, retorna o index deste valor na array
+
+const frutas4 = ['Banana', 'Pêra', 'Uva',  'Maçã'];
+
+const indexUva = frutas4.find(item => {
+  return true;
+}) // 2
+
+const indexUva2 = frutas4.findIndex(item => {
+  return true;
+}) // 2
+
+// console.log('Index: ', indexUva) // find
+// console.log('Index: ', indexUva2) // findIndex
+
+
+
+
+const numeros2 = [6, 43, 22, 88, 101, 29];
+const buscaMaior45 = numeros2.find(x => x > 45) // 88
+
+
+
+// [].FILTER()
+// [].filter(), retorna uma array com a lista de valores que durante a sua iteração retornaram um valor truthy.
+
+const frutas5 = ['Banana', undefined, null, '', 'Uva', 0, 'Maçã'];
+
+const arrayFrutas = frutas5.filter((item) => {
+  return item
+})
+// console.log(arrayFrutas)
+
+const numeros3 = [6, 43, 22, 88, 101, 29];
+const buscaMaior = numeros3.filter(x => x > 45);
+
+
+
+// EXEMPLO DE FILTER EM OBJETOS
+
+const aulas2 = [
+  {
+    nome: 'HTML 1',
+    min: 15
+  },
+  {
+    nome: 'HTML 2',
+    min: 10
+  },
+  {
+    nome: 'CSS 1',
+    min: 20
+  },
+  {
+    nome: 'JS 1',
+    min: 25
+  },
+]
+
+const aulasMaiores = aulas2.filter((aula) => { 
+  return aula.min > 15;
+});
+// [{nome: 'CSS 1', min: 20}, {nome: 'JS 1', min: 25}]
+
+console.log(aulasMaiores)

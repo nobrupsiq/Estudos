@@ -9,6 +9,8 @@ const objetoCurso = arrayCursos.map((curso) => {
   const descricao = curso.querySelector('p').innerText
   const aulas = curso.querySelector('.aulas').innerText
   const horas = curso.querySelector('.horas').innerText
+
+  // PESQUISAR DUVIDA: POR QUE O innerText não aparece na marcação do vscode quando se trata de uma classe e nao tag
   
   return {
     titulo,

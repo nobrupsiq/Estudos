@@ -57,10 +57,10 @@ const compras = [
     preco: 'R$ 10,60'
   }
 ]
-let somador = 0
+
 const valorTotal = compras.reduce((acumulador, item) => {
   const limpador = +item.preco.replace('R$', '').trim().replace(',', '.');
   return acumulador + limpador
 }, 0)
 
-console.log(valorTotal)
+// REDUCE É BEM COMPLEXO, VOU PRECISAR VOLTAR MAIS VEZES NESSAS AULAS

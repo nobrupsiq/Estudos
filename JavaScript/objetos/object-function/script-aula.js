@@ -134,11 +134,80 @@ const filtro2 = Array.prototype.filter.call(li, (item) => {
 // OBS: por padrão no NodeList não possui o método filter por isso tive que passar ele da forma acima
 
 
-// console.log(li2)
-// Retorna os itens que possuem ativo
-
 // OBS: Só vou utilizar array.prototype... quando eu tiver um objeto que se pareça com um array
 
 
 
-  
+// FUNCTION.APPLY()
+// O apply(this, [arg1, arg2, ...]) funciona como o call, a única diferença é que os argumentos da função são passados através de uma array.
+
+
+const numeros = [3, 4, 6, 1, 34, 44, 32];
+
+const teste = Math.max.call(null, numeros); // NaN
+// teste irá retornar "NaN" not a number
+const teste2 = Math.max.apply(null, numeros); // 44
+// O apply consegue recerber uma Array
+// irá retornar o maior número
+
+
+// APPLY VS CALL
+// A única diferença é a array como segundo argumento
+
+const li3 = document.querySelectorAll('li');
+
+function itemPossuiAtivo(item) {
+  return item.classList.contains('ativo');
+}
+
+const filtro1 = Array.prototype.filter.call(li, itemPossuiAtivo);
+const filtro3 = Array.prototype.filter.apply(li, [itemPossuiAtivo]);
+
+
+// FUNCTION.BIND()
+// Diferente de call e apply, bind(this, arg1, arg2, ...) não irá executar a função mas sim retornar a mesma com o novo contexto de this.
+
+
+const li4 = document.querySelectorAll('li');
+
+const filtrarLi = Array.prototype.filter.bind(li, function(item) {
+  return item.classList.contains('ativo');
+});
+
+filtrarLi();
+
+const $ = document.querySelectorAll.bind(document)
+const teste4 = $('li')
+
+
+
+// ARGUMENTOS E BIND
+// Não precisamos passar todos os argumentos no momento do bind, podemos passar os mesmos na nova função no momento da execução da mesma.
+
+const carro = {
+  marca: 'Ford',
+  ano: 2018,
+  acelerar: function(aceleracao, tempo) {
+    return `${this.marca} acelerou ${aceleracao}km em ${tempo}min`;
+  }
+}
+carro.acelerar(100, 20);
+
+const honda = {
+  marca: 'Honda',
+};
+
+const acelerarHonda = carro.acelerar.bind(honda);
+
+acelerarHonda(200, 10);
+
+
+// ARGUMENTOS COMUNS
+// Podemos passar argumentos padrões para uma função e retornar uma nova função.
+
+function imc(altura, peso) {
+  return peso / (altura * altura);
+}
+const imc180 = imc.bind(null, 1.80);
+imc(1.80, 70); // 21.6
+imc180(70); // 21.6

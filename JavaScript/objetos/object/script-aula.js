@@ -180,4 +180,20 @@ Object.preventExtensions(carro5);
 // formas de verificar
 Object.isFrozen(carro5); // true
 Object.isSealed(carro5); // true
-Object.isExtensible(carro5); // true
+Object.isExtensible(carro5); // false
+
+
+
+// PROPRIEDADES E MÉTODOS DO PROTÓTIPO
+// Já que tudo em JavaScript é objeto, as propriedades abaixo estão disponíveis em todos os objetos criados a partir de funções construtoras. {}.constructor retorna a função construtora do objeto.
+
+const frutas3 = ['Banana', 'Uva'];
+frutas.constructor; // Array
+
+const frase = 'Isso é uma String';
+frase.constructor; //String
+
+
+// {}.HASOWNPROPERTY('PROP') E {}.PROPERTYISENUMERABLE('PROP')
+// Verifica se possui a propriedade e retorna true. A propriedade deve ser direta do objeto e não do protótipo. O {}.propertyIsEnumerable() verifica se a propriedade é enumerável.
+

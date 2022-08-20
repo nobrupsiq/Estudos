@@ -197,3 +197,43 @@ frase.constructor; //String
 // {}.HASOWNPROPERTY('PROP') E {}.PROPERTYISENUMERABLE('PROP')
 // Verifica se possui a propriedade e retorna true. A propriedade deve ser direta do objeto e não do protótipo. O {}.propertyIsEnumerable() verifica se a propriedade é enumerável.
 
+const frutas4 = ['Banana', 'Uva'];
+
+frutas4.hasOwnProperty('map'); // false
+Array.hasOwnProperty('map'); // false
+Array.prototype.hasOwnProperty('map'); // true
+
+Array.prototype.propertyIsEnumerable('map'); // false
+window.propertyIsEnumerable('innerHeight'); // true
+
+
+
+// {}.ISPROTOTYPEOF(VALOR)
+// Verifica se é o protótipo do valor passado.
+
+const frutas5 = ['Banana', 'Uva'];
+
+Array.prototype.isPrototypeOf(frutas); // true
+// Array.prototype é prototipo de frutas? SIM
+
+// {}.TOSTRING()
+// Retorna o tipo do objeto. O problema é toString() ser uma função dos protótipos de Array, String e mais. Por isso é comum utilizarmos a função direto do Object.prototype.toString.call(valor).
+
+const frutas6 = ['Banana', 'Uva'];
+frutas.toString(); // 'Banana, Uva'
+typeof frutas6; // object
+Object.prototype.toString.call(frutas6); // [object Array]
+
+const frase2 = 'Uma String';
+frase2.toString(); // 'Uma String'
+typeof frase2; // string
+Object.prototype.toString.call(frase2); // [object String]
+
+const carro6 = {marca: 'Ford'};
+carro6.toString(); // [object Object]
+typeof carro6; // Object
+Object.prototype.toString.call(carro6); // [object Object]
+
+const li = document.querySelectorAll('li');
+typeof li; // object
+Object.prototype.toString.call(li); // [object NodeList]

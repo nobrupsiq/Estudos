@@ -14,7 +14,6 @@
 
 // Ferramentas que permitem dividirmos o código em módulos já existem a bastante tempo. Grunt, Gulp, Webpack, Browserify, Parcel e outras. Mas agora os módulos são nativos.
 
-
 // MODULES ES6
 // Basta adicionar type="module" na tag script do HTML. Utilize a palavra chave export na frente do valor que deseja exportar (use default se for único). E import nome from arquivo.js para importar.
 
@@ -47,7 +46,6 @@
 // scrollSuave();
 // scrollAnimacao();
 
-
 // Importe todos os valores em um objeto
 // import * as scroll from './scroll.js';
 // scroll.scrollSuave();
@@ -62,7 +60,6 @@
 // export const obj = {nome: 'Ford'};
 // export const str = 'Frase';
 // export class Carro {};
-
 
 // // arquivo script.js
 // import * as conf from './configuracao.js';
@@ -84,7 +81,6 @@
 // Ao invés de fazer referência ao window.
 
 // Assíncrono
-
 
 // USE STRICT
 // O modo estrito previne que algumas ações consideradas erros. Basta adicionarmos 'use strict' no topo de um arquivo, que ele entrará neste modo.

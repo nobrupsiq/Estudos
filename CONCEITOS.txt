@@ -1,0 +1,26 @@
+Tenha bem profundo os conceitos de orientação a objetos / SOLID / Clean Code
+
+exemplo de perguntas que voce deveria saber responder tranquilamente (e saber implementar no código)
+
+- O que é uma classe e o que é um objeto?
+- O que é polimorfismo?
+- O que é herança?
+- Qual é a diferença entre interface e classe abstrata?
+
+- O que é um json? Como funcionam strings, números, arrays, em json? Simule um json?
+- Quais são os componentes basicos de um request http (header, method, body, status code)
+- Quais os principais status code e o que significa cada familia de status code? 200, 202, 204, 400, 401, 403, 404, 500, 502, 503, 504;.. familias 2XX, 3XX, 4XX, 5XX
+- Quais são os verbos e quando utilizar? POST, GET, PATCH, PUT, DELETE
+
+- O que é um banco de dados? Como é feito pra manipular dados e ver dados? Como funciona um Insert, Update, Delete, Select, Where, Group By, Having, Order By, Limit, etc
+- Qual a diferença entre INNER JOIN e LEFT JOIN?
+- O que é uma chave primaria e uma chave estrangeira? Qual sua diferença?
+- O que é o acrônimo ACID ??
+- O que é o teorema de CAP?
+- Qual a diferença entre um banco de dados SQL e NoSQL? Exemplos?
+
+- O que é versionamento de código? Como funcionam as branches, o que são pull requests? Git, GitHub, e seus comandos basicos.. commit, push, pull, branch, etc etc
+
+- O que é e pra que servem testes unitários, teste de integração? Como é feito (no código) teste unitário? saber fazer com xUnit e com uso de Moq (Saber explicar pra que server mock tb)
+
+- O que é Scrum e Kanban? O que são os principios ágeis? o que são os termos planning, sprint, daily meeting, retrospectiva, etc

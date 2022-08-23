@@ -1,0 +1,21 @@
+body {
+  margin: 20px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+dl,
+dd {
+  /* dl por padrão não possui padding só margin */
+  margin: 0px;
+}

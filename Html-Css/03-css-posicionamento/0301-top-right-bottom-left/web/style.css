@@ -1,0 +1,7 @@
+body {
+   writing-mode: vertical-rl;
+}
+
+h1 {
+   margin-block-start: 30px;
+}

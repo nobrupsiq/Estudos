@@ -1,0 +1,46 @@
+p [required] {
+  border: 2px solid tomato;
+}
+
+a[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+/* PEGAR ELEMENTOS QUE COMEÇAM APENAS COM */
+[href^="#"] {
+  background: tomato;
+}
+
+/* PEGAR ELEMENTOS QUE TERMINAM COM */
+
+[href$=".com"] {
+  background: forestgreen;
+}
+
+section > h2 {
+  color: tomato;
+}
+
+div > h2 {
+  color: #caf;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+p + p {
+  margin-top: 20px;
+}
+
+body {
+  color: blue;
+}
+
+* {
+  border: 2px solid red;
+}

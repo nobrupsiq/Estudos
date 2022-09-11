@@ -1,0 +1,72 @@
+DOCTYPE
+
+- Não é um elemento HTML
+- Como seu documento será interpretado pelo Browser
+
+ESCREVA TÍTULOS INTELIGENTES
+
+- Significativos
+- Palavras-chave (buscas)
+
+
+METATAGS
+
+- charset 
+- description
+- viewport
+
+
+DICA VALIOSA
+
+NÃO USE O ATRIBUTO STYLE
+
+- Separação de responsabilidades
+- Especificidade x !important
+- Código sujo
+- Arquivo separado
+
+
+IMPORTAÇÃO DE CSS E DE JS
+
+- Estilos no <head>
+-- Melhor performance de renderização da página
+- Scripts antes de fechar o </body>
+-- Melhor performance de renderização
+-- Prevenção de erros
+-- quer deixar no <head> ? Conheça o atributo defer(ler o script em paralelo com o HTML)
+
+TAGS SEMÂNTICAS
+
+
+ATRIBUTOS DE ACESSIBILIDADE
+
+- img: alt
+- title
+- aria
+- tabindex
+
+ESCRITA
+
+- letras minúsculas
+- fechamento de TAGS
+- formatação e limpeza de código
+-- prettier
+
+FORMULÁRIOS
+
+- fildset + legend
+- label + input
+
+COMPRESS HTML
+
+- Diminui o tamanho do Arquivo
+- Automatizado vs Manual
+-- Online toll
+-- Gulp (or Webpack?)
+
+VALIDAR O HTML
+
+- Verificar os padrões
+- Alertas e erros
+- LightHouse (DevTools)
+- https://validator.w3.org/

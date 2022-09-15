@@ -1,0 +1,10 @@
+o que tipagem estática realmente faz?
+
+Tipagem estática nada mais é que enquanto a gente desenvolve tem um processo rodando em background na nossa máquina
+que ele vai testando o caminho dos nossos código pra ver se o código que a gente está escrevendo é válido.
+
+Ou seja, tipagem estática é uma forma da gente evitar erros de irem para a produção já no momento de desenvolvimento,
+então o typescript ele fica rodando ali em background em nossa máquina que vai quase que testando os fluxos do nosso
+código pra ver se o código que estamos escrevendo pode dar um erro em produção ou não.
+
+Também permite a gente a definir qual que é o formato que a gente espera de cada informação dentro da nossa aplicação

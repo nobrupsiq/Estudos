@@ -12,8 +12,10 @@ var n2 = parseFloat(prompt("Dgite outro número: "));
 
 // 3 - preciso calcular a média
 var media = (n1 + n2) / 2;
+
 // 4 - saber se o da média é maior que 5
 alert(media > 5);
+
 /* OPERADORES DE COMPARAÇÃO
 
 == igualdade (valor)

@@ -39,7 +39,6 @@ img {
 }
 
 .superinfo {
-   max-width: 960px;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;

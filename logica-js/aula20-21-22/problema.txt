@@ -1,0 +1,3 @@
+Para esse exercício, tente reescrever a lógica que fizemos em um exercício anterior, de modo a torná-la mais curta. Essa tarefa tem por objetivo te fazer pensar em como solucionar MELHOR um problema. Não tem resposta certa ou errada aqui. Cada pessoa pode pensar em maneiras diferentes de resolver o mesmo problema. O que vale aqui é exercitar sua lógica.
+
+

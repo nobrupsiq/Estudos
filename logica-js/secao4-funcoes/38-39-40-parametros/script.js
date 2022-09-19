@@ -1,13 +1,27 @@
-// Problema
+var n1 = parseFloat(prompt("Digite um número: "));
+saida(n1);
 
-// Pedir para o usuário digitar dois números que representam os lados de um retângulo assim que a página é carregada. Mostrar na tela a área total quando clicar num botão
+function saida(numero) {
+   var output = document.querySelector("#output");
+   output.innerHTML = numero;
+}
 
-var largura = prompt("Digite a largura: ");
-largura = parseFloat(largura);
+function calcular(operador) {
+   var n = parseFloat(prompt("Digite outro número: "));
+   switch (operador) {
+      case "+":
+         n1 += n;
+         break;
+      case "-":
+         n1 -= n;
+         break;
+      case "*":
+         n1 *= n;
+         break;
+      case "/":
+         n1 /= n;
+         break;
+   }
 
-var altura = prompt("Digite a altura: ");
-altura = parseFloat(altura);
-
-function mostrarArea(l, a) {
-   alert(`Área total: ${l * a}`);
+   saida(eval(output.innerHTML + operador + n));
 }

@@ -12,9 +12,9 @@ function handleClick() {
 }
 
 
-setTimeout(() => {
-    console.log('testando')
-}, 0);
+// setTimeout(() => {
+//     console.log('testando')
+// }, 0);
 
 // for (let i = 0; i < 5; i++) {
 //     setTimeout(() => {
@@ -22,24 +22,35 @@ setTimeout(() => {
 //     }, 1000 * i)
 // }
 
+// setTimeout(() => {
+//     console.log('testando')
+// }, 200)
+
+// for (let i = 0; i < 10; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, 1000 * i)
+// }
+
 
 // SETINTERVAL
 // irá ativar o callback toda vez que a quantidade de tempo passar.
 
-function loop(texto) {
-    console.log(texto);
-}
+// function loop(texto) {
+//     console.log(texto);
+// }
 // loop a cada segundo
 // setInterval(loop, 300, '300ms')
 
-let i = 0;
-const meuLoop = setInterval(() => {
-    console.log(i++)
-    if (i > 20) {
-        clearInterval(meuLoop)
-    }
-}, 300, '300ms')
+const contarAte10 = setInterval(callback, 1000);
 
+let i = 0;
+function callback() {
+    console.log(i++, '*');
+    if (i > 10) {
+        clearInterval(contarAte10);
+    }
+};
 
 // CLEARINTERVAL
 // podemos parar um intervalo com o clearInterval. Para isso precisamos atribuir o setInterval a uma variável.

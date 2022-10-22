@@ -51,6 +51,6 @@ function puxarPiada() {
             paragrafoPiada.innerText = piada.value;
         });
 }
-btnProxima.addEventListener('click', puxarPiada);
 
+btnProxima.addEventListener('click', puxarPiada);
 puxarPiada();

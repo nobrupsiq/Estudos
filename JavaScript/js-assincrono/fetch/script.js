@@ -62,14 +62,19 @@ divHeader.then((response) => {
 // Retorna o status da requisição. Se foi 404, 200, 202 e mais. ok retorna um valor booleano sendo true para uma requisição de sucesso e false para uma sem sucesso.
 
 const teste = fetch('https://viacep.com.br/ws/01001000/json/');
+console.log(teste);
 
 teste.then((response) => {
-    console.log(response);
-    console.log(response.type);
-    if (response.status === 404) {
-        console.log('Página não existe');
-    }
+    response.json().then((btJson) => {
+        console.log(btJson);
+    });
 });
 
 // .URL E .TYPE
 // .url retorna o url da requisição. .type retorna o tipo da reposta.
+
+// types
+// basic: feito na mesma origem
+// cors: feito em url body pode estar disponível
+// error: erro de conexão
+// opaque: no-cors, não permite acesso de outros sites
